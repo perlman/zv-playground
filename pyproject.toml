@@ -1,0 +1,20 @@
+[project]
+name = "zv-playground"
+version = "0.1.0"
+description = "Eric's Zarr Vectors Playground"
+requires-python = ">=3.11"
+dependencies = [
+    "ngio-collections",
+    "neuroglancer",
+    "jupyterlab",
+    "zarr-vectors",
+    "zarr-vectors-tools",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+ngio-collections = { path = "../ngio-collections", editable = true }
+zarr-vectors = { path = "../zarr-vectors-py", editable = true }
+zarr-vectors-tools = { path = "../zarr-vectors-tools", editable = true }
